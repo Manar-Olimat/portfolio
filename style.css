@@ -1,0 +1,333 @@
+
+#home-sec {
+    width: 100%;
+    height: 100vh;
+    background: url("./resources/andre-novo-artboard-1.jpg") top center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  #home-sec:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  #home-sec .container {
+    padding-top: 72px;
+    position: relative;
+    text-align: center;
+  }
+  
+  #home-sec h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    font-family: 'Ibarra Real Nova', serif;
+    font-style: italic;
+    font-weight: lighter;
+    color: #fff;
+  }
+ 
+  #home-sec h2 {
+    color: #eee;
+    margin-bottom: 40px;
+    /* font-size: 24px; */
+    font-family: 'Ibarra Real Nova', serif;
+
+  } 
+  h2#myName{
+    font-weight: bolder;
+    font-size: 48px;
+    color: whitesmoke;
+
+    position: relative;
+    /* left: 50px; */
+
+  }
+  .hero-myName{
+    display: inline-block;
+    position: absolute;
+    left: 50px;
+  }
+ 
+  #home-sec .btn.btn-primary {
+    width: 100px;
+    /* height: 94px; */
+    margin: 0 auto;
+    /* background: radial-gradient(#009961 50%, rgba(0, 153, 97, 0.4) 52%); */
+    /* border-radius: 50%; */
+    /* display: block; */
+    overflow: hidden;
+    position: relative;
+    left: 100px;
+  /* bottom: 10px; */
+}
+/* ....................... sections....................... */
+/* ...............ABOUT........... */
+section {
+    padding: 60px 0;
+  }
+  
+  .section-bg {
+    background-color: #e7f8f6;
+  }
+  
+  .section-title {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  
+  .section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #29658A;
+    bottom: 0;
+    left: calc(50% - 25px);
+  }
+
+  #persona {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 28px;
+    border: #29658A 5px solid;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    /* border-color: #29658A; */
+    
+    position: relative;
+  }
+  #persona p{
+    position: absolute;
+    top: 120px;
+  }
+  
+  /* ................SKILLS............... */
+  .section-supTitle{
+
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  
+  .section-supTitle ::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #29658A;
+    bottom: 0;
+    /* left: calc(20% - 25px); */
+  }
+   /* ................TIMELINE............... */
+
+   /* The actual timeline (the vertical ruler) */
+.main-timeline {
+    position: relative;
+    }
+    
+    /* The actual timeline (the vertical ruler) */
+    .main-timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #939597;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    }
+    
+    /* Container around content */
+    .timeline {
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    }
+    
+    /* The circles on the timeline */
+    
+    .timeline::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -13px;
+    background-color: #29658A;
+    border: 5px solid #2E9CCA;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+    }
+    
+    /* Place the container to the left */
+    .left {
+    padding: 0px 40px 20px 0px;
+    left: 0;
+    }
+    
+    /* Place the container to the right */
+    .right {
+    padding: 0px 0px 20px 40px;
+    left: 50%;
+    }
+    
+    /* Add arrows to the left container (pointing right) */
+    .left::before {
+    content: " ";
+    position: absolute;
+    top: 18px;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+    }
+    
+    /* Add arrows to the right container (pointing left) */
+    .right::before {
+    content: " ";
+    position: absolute;
+    top: 18px;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    }
+    
+    /* Fix the circle for containers on the right side */
+    .right::after {
+    left: -12px;
+    }
+    
+    /* Media queries - Responsive timeline on screens less than 600px wide */
+    @media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+    .main-timeline::after {
+    left: 31px;
+    }
+    
+    /* Full-width containers */
+    .timeline {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+    
+    /* Make sure that all arrows are pointing leftwards */
+    .timeline::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    }
+    
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+    left: 18px;
+    }
+    
+    .left::before {
+    right: auto;
+    }
+    
+    /* Make all right containers behave like the left ones */
+    .right {
+    left: 0%;
+    }
+}
+
+/* ............................. PROJECTS................... */
+.proj-container{
+    position: relative;
+    row-gap: 20px;
+}
+
+.project{
+position: absolute;
+
+}
+div.one {
+    position: relative;
+    display: inline-block;
+}
+div.one #project-preview{
+    position: relative;
+    left: 10px;
+    display: inline-block;
+}
+
+div.one .project{
+    position: relative;
+
+    border:2px #29658A groove;
+    right: 10px;
+    top: 40px;
+    width: 506px;
+    height: 241px;
+    display: inline-block;
+
+}
+div.two {
+    position: relative;
+    display: inline-block;
+}
+div.two #project-preview{
+    position: relative;
+    right: 10px;
+    display: inline-block;
+}
+
+div.two .project{
+    position: relative;
+    border:2px #29658A groove;
+    top: 40px;
+
+    left: 10px;
+    width: 506px;
+    height: 241px;
+    display: inline-block;
+
+}
+div.three {
+    position: relative;
+    display: inline-block;
+}
+div.three #project-preview{
+    position: relative;
+    left: 10px;
+    display: inline-block;
+}
+
+div.three .project{
+    position: relative;
+    border:2px #29658A groove;
+    top: 40px;
+
+    right: 10px;
+    width: 506px;
+    height: 241px;
+    display: inline-block;
+
+}
