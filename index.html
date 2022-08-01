@@ -4,81 +4,92 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Bootstrap link -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./style.css">
   <title>Manar Olimat</title>
-
 </head>
-<header>
-  <div class="container-fluid">
-    <nav id="navbar" class="navbar navbar-light fixed-top bg-light px-3">
-      <a class="navbar-brand fw-bold fst-italic border"  href="#">MANAR <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; OLIMAT</a>
-      <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a class="nav-link" href="#home-sec">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about-sec">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#project-sec">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact-sec">Contact</a>
-        </li>
 
-      </ul>
-    </nav>
-  </div>
-
-  <!--....................... END OF NAVIGATION...................... -->
+<body>
 
 
 
-</header>
-<main>
-  <div class="container-fluid scrollspy-example" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0"
-    tabindex="0">
-    <section id="home-sec" class="d-flex flex-column justify-content-center">
-      <div class="container col-xl-12" data-aos="zoom-in" data-aos-delay="100">
-        <div class="row justify-content-center">
-          <div id="hero" class="col-xl-12 ">
-            <h1>"Life isn't about finding yourself. Life is about creating yourself."
-            </h1>
-            <h2><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -George Bernard Shaw</h2>
 
-            <div class="hero-myName">
-              <h2 id="myName">Manar Olimat</h2>
-              <a href="#about-sec" class="btn btn-primary" role="button">About Me</a>
+  <nav class="navbar navbar-expand-lg navbar-dark  shadow-5-strong fixed-top px-3 ">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold fst-italic border" href="#home-sec">MANAR <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; OLIMAT</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto nav-pills gap-3 mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home-sec">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-sec">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project-sec">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-sec">Contact</a>
+          </li>
+        </ul>
 
-            </div>
+      </div>
+    </div>
+  </nav>
+  <!-- ...............................BANNER...................................... -->
+  <section id="home-sec">
+    <!-- Jumbotron -->
+    <div class="card card-image banner">
+      <div class="text-white text-center rgba-stylish-strong py-5 px-4">
+        <div class="py-5">
+
+          <!-- Content -->
+          <!-- <h5 class="h5 orange-text"><i class="fa fa-camera-retro"></i> Photography</h5> -->
+          <h2 class="card-title banner-quote  my-4 py-2 pt-4 fst-italic fw-bold fs-1">"Life isn't about
+            finding yourself. Life is about creating yourself."</h2>
+          <p class="mb-4 pb-2 px-md-5 mx-md-5 fs-5"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            -George Bernard Shaw</p>
+          <div class="hero-myName ">
+            <h2 id="myName fs-3">Manar Olimat</h2>
+            <a href="#about-sec" class="about-arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill=#40adbd
+                class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
+              </svg>
+            </a>
+
           </div>
         </div>
       </div>
-  </div>
+    </div>
   </section>
-  <!-- .......................END OF HOME ..........................-->
 
+  <!-- .................................ABOUT.................................... -->
   <section id="about-sec">
-    <div class="container gx-5 py-5">
-
+    <div class="container">
       <div class="section-title row">
-        <h2>ABOUT</h2>
-      </div>
-
-      <div id="personal-statment" class="row content">
         <div class="col">
-          <img src="./resources/personal.jpg" width="547" height="549" alt="personal photo">
+          <h2>ABOUT</h2>
+
         </div>
-        <div class="col pt-4 " id="persona">
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="./res/personal.jpg" width="547" height="549" alt="personal photo" class="img-fluid img-thumbnail">
+
+        </div>
+        <div class="col" id="persona">
           <p width="200px" pt-6>
             My Name Is Manar Olimat, I Am A Software Engineer Specializing In Building And Designing Web Pages.
-            Currently Trainee At Orange Jordan Seeking For In-field Experience.
+            Currently Trainee At Orange Jordan Seeking For In-field Experience.</p>
         </div>
       </div>
       <!-- .....................SKILLS....................... -->
@@ -87,46 +98,26 @@
       </div>
       <div class="row pt-4 skills-content">
 
-        <div class="col-lg-6">
-          <h5 class="progress-title"> HTML</h5>
-          <div class="progress">
-
-            <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="70%"
-              aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-
+        <div class="col">
+          <h2>Technical Skills</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Desinging</li>
+          </ul>
         </div>
-        <div class="col-lg-6">
-          <h5 class="progress-title"> CSS</h5>
-          <div class="progress">
-
-            <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="70%"
-              aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-
+        <div class="col">
+          <h2>Soft Skills</h2>
+          <ul>
+            <li>Team Work</li>
+            <li>Time Manegment</li>
+            <li>Adaptability</li>
+          </ul>
         </div>
+
       </div>
-      <div class="row pt-4 skills-content">
 
-        <div class="col-lg-6">
-          <h5 class="progress-title"> Design</h5>
-          <div class="progress">
 
-            <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="70%"
-              aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-
-        </div>
-        <div class="col-lg-6">
-          <h5 class="progress-title"> Team Work</h5>
-          <div class="progress">
-
-            <div class="progress-bar bg-info" role="progressbar" style="width: 60%" aria-valuenow="70%"
-              aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-
-        </div>
-      </div>
       <!-- ........................TIMELINE........................... -->
       <div class="section-supTitle pt-5 row">
         <h2>TIMELINE</h2>
@@ -138,7 +129,8 @@
               <div class="card-body p-4">
                 <h3 class="timeline-main-title">TRAINING</h3>
                 <h4>June/2022- Till now</h4>
-                <p class="mb-0">Full-stack Web Developer Trainee at Orange Coding Academy.</p>
+                <p class="mb-0">Full-stack Web Developer Trainee at Orange Coding Academy. <br>
+                  (HTML5, CSS3, Bootstrap,JS)</p>
               </div>
             </div>
           </div>
@@ -155,11 +147,15 @@
         </div>
       </div>
 
-
-      <!-- ..................................... -->
+      <!-- main-container-end -->
     </div>
   </section>
-  <!-- ........................END OF ABOUT........................... -->
+  <!-- .................................Project.................................... -->
+
+
+
+
+
   <section id="project-sec">
     <div class="section-title row">
       <h2>Some Things I’ve Built
@@ -169,7 +165,8 @@
       <div class="row pt-2">
         <div class="col one">
           <div id="project-preview">
-            <img src="./resources/mockup_wire.png" alt="wireframe & mockup" width="506.400" height="341.800">
+            <img src="./res/mockup_wire.png" alt="wireframe & mockup" class="img-fluid img-thumbnail" width="506.400"
+              height="341.800">
           </div>
           <div class="card project ">
             <div class="card-body">
@@ -194,77 +191,50 @@
       <br>
       <div class="row pt-2">
         <div class="col two">
-         
+
+
           <div class="card project ">
             <div class="card-body">
               <h5 class="card-title">Basic Wireframe Using Bootstrap</h5>
-              <h6 class="card-subtitle mb-2 text-muted">TOOL: V.S cod</h6>
+              <h6 class="card-subtitle mb-2 text-muted">TOOL: V.S cod, HTML, CSS, Bootstrap</h6>
               <p class="card-text">
                 Wireframe Using Bootstrap Snippets As: <br>
                 •Cards <br>
                 •Navbar
 
-               
+
               </p>
-              <a href="https://github.com/Manar-Olimat/bootstrap"
-                class="card-link b">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 
-                  6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+              <a href="https://github.com/Manar-Olimat/bootstrap" class="card-link b">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 
+                          6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
                 </svg>
-</a>
-              <a href="https://manar-olimat.github.io/bootstrap/"
-                class="card-link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
-                  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+              </a>
+              <a href="https://manar-olimat.github.io/bootstrap/" class="card-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                  <path fill-rule="evenodd"
+                    d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
                 </svg></a>
             </div>
           </div>
-        
+
           <div id="project-preview">
-            <img src="./resources/bootstrap.png" alt="wireframe using bootstrap" width="506.400" height="341.800">
+            <img src="./res/bootstrap.png" alt="wireframe using bootstrap" class="img-fluid img-thumbnail"
+              width="506.400" height="341.800">
           </div>
         </div>
-       
+
       </div>
-       <!-- <div class="row pt-2">
-          <div class="col three">
-            <div id="project-preview">
-              <img src="./resources/skincare.png" alt="skin care" width="506.400" height="341.800">
-            </div>
-            <div class="card project">
-              <div class="card-body">
-                <h5 class="card-title">Skin Care Web Page</h5>
-                <h6 class="card-subtitle mb-2 text-muted">TOOL: VS Code</h6>
-                <p class="card-text">
-                  Skin Care Web Page Designed Based On A Given Wireframe
 
-                </p>
-                <a href="https://github.com/Manar-Olimat/task1"
-                  class="card-link">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 
-                    6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                  </svg>
-                </a>
-                <a href="https://manar-olimat.github.io/task1/"
-                  class="card-link">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
-                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-
-        </div> -->
     </div>
 
   </section>
-
-    <!-- ........................END OF PROJECTS........................... -->
+  <!-- .................................CONTACT.................................... -->
 
   <section id="contact-sec">
     <div class="section-title row">
@@ -276,79 +246,105 @@
         Got An Idea? Feel Free To Mail Me And We Can Work Together To Bring It To Life.
       </p>
     </div>
- <div class="container-fluid  contact-inner-sec">
-  <div class="row email pt-4">
-    <div class="col">
-     <a href="mailto: manar.olimat07@gmail.com">
-       <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="70px" fill=#73d5ff viewBox="0 0 16 16">
-         <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
-       </svg>
-     </a>
-    
+    <div class="container  contact-inner-sec d-flex justify-content-center">
+      <div class="first-contact ">
+        <div class="row email pt-4">
+          <div class="col email">
+            <a href="mailto: manar.olimat07@gmail.com">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="70px" fill=#73d5ff viewBox="0 0 16 16">
+                <path
+                  d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+              </svg>
+            </a>
+            <div class=" contact-details1 ">
+              <h3 class="row-title fst-italic">EMAIL</h3>
+              <h4> manar.olimat07@gmail.com</h4>
+            </div>
+          </div>
+          <div class="col phone">
+
+            <a href="tel:+962770700820">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="70px" fill=#73d5ff class="bi bi-phone-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z" />
+              </svg>
+            </a>
+            <div class=" contact-details2">
+              <h3 class="row-title fst-italic">Phone No</h3>
+
+              <h4>+962770700820</h4>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <br>
+      <div class="row contact-icons p-4">
+        <div class="col">
+          <div>
+            <a class="contact-icon p-4" href="https://www.linkedin.com/in/manar-olimat/">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="70px" fill=#73d5ff class="bi bi-linkedin"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+              </svg>
+            </a>
+            <a class="contact-icon p-4" href="https://github.com/Manar-Olimat">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="70px" fill=#73d5ff class="bi bi-github"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 
+                       6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+              </svg>
+            </a>
+            <a class="contact-icon p-4" href="https://discordapp.com/users/6692">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="70px" fill=#73d5ff class="bi bi-discord"
+                viewBox="0 0 16 16">
+                <path
+                  d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z" />
+              </svg>
+            </a>
+          </div>
+
+
+
+        </div>
+      </div>
     </div>
-    <div class="col contact-details1 ">
-     <h3 class="row-title fst-italic">EMAIL</h3>
-     <h4> manar.olimat07@gmail.com</h4>
     </div>
-     </div>
-    <div class="row phone ">
- 
-   <div class="col">
-       
-         <a href="tel:+962770700820">
-           <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="70px" fill=#73d5ff class="bi bi-phone-fill" viewBox="0 0 16 16">
-             <path d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z"/>
-           </svg>
-         </a>
-     </div>
- <div class="col contact-details2">
-   <h3 class="row-title fst-italic">Phone No</h3>
- 
-   <h4>+962770700820</h4>
- 
- </div>    </div>
-     <div class="row contact-icon p-4">
-       <div class="col">
-         <a href="https://www.linkedin.com/in/manar-olimat/">
-           <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill=#73d5ff class="bi bi-linkedin" viewBox="0 0 16 16">
-             <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-           </svg>
-         </a>
-         <div class="col contact-icon p-4">
-           <a href="https://github.com/Manar-Olimat">
-             <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill=#73d5ff class="bi bi-github" viewBox="0 0 16 16">
-               <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 
-               6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-             </svg>
-           </a>
-           <div class="col contact-icon p-4">
-             <a href="https://discordapp.com/users/6692">
-               <svg xmlns="http://www.w3.org/2000/svg"width="30px" height="30px" fill=#73d5ff class="bi bi-discord" viewBox="0 0 16 16">
-                 <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/>
-               </svg>
-             </a>
-       </div>
-     </div>
-       </div>
-     </div>
- </div>
+    </div>
   </section>
 
-  </div>
-</main>
-<footer>
-  <div class="container">
-    <div>
-      <h3 class=" ff-'Ibarra Real Nova', serif">Manar Olimat</h3>
-      <p>It’s through mistakes that you actually can grow.</p>
+  <footer class=" bg-dark ">
+    <div class="container">
+      <div>
+        <h3 class=" ff-'Ibarra Real Nova', serif">Manar Olimat</h3>
+        <p>It’s through mistakes that you actually can grow.</p>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Manar Olimat 2022</span></strong>. All Rights Reserved
+      </div>
     </div>
-    <div class="copyright">
-      &copy; Copyright <strong><span>Manar Olimat 2022</span></strong>. All Rights Reserved
-    </div></div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </footer>
 
+  <!-- ..................................................................... -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <script>
+    var nav = document.querySelector('nav');
+    window.addEventListener('scroll', function () {
+      if (window.pageYOffset > 200) {
+        nav.classList.add('bg-dark', 'shadow');
+      }
+      else {
+        nav.classList.remove('bg-dark', 'shadow');
+      }
+    });
+  </script>
 </body>
 
 </html>

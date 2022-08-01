@@ -1,78 +1,35 @@
-#navBar{
-    background-color: #e9e8e6;
+.nav-pills{
+    position: relative;
+    left: 400px;
 }
-#home-sec {
+li a.nav-link {
+    color: whitesmoke;
+    font-size: 22px;
+    margin-right: 50px;
+}  
+
+  .card-image{
     width: 100%;
     height: 100vh;
-    background: url("./resources/andre-novo-artboard-1.jpg") top center;
+    background: url("./res/andre-novo-artboard-1.jpg") top center;
     background-size: cover;
     position: relative;
   }
-  
-  #home-sec:before {
-    content: "";
-    background: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-  
-  #home-sec .container {
-    padding-top: 72px;
-    position: relative;
-    text-align: center;
-  }
-  
-  #home-sec h1 {
-    margin: 0 0 10px 0;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 56px;
+  .banner{
+    padding-top: 150px;
     font-family: 'Ibarra Real Nova', serif;
-    font-style: italic;
-    font-weight: lighter;
-    color: #fff;
   }
- 
-  #home-sec h2 {
-    color: #eee;
-    margin-bottom: 40px;
-    /* font-size: 24px; */
-    font-family: 'Ibarra Real Nova', serif;
+.hero-myName{
 
-  } 
-  h2#myName{
-    font-weight: bolder;
-    font-size: 48px;
-    color: whitesmoke;
-
-    position: relative;
-    /* left: 50px; */
-
-  }
-  .hero-myName{
-    display: inline-block;
-    position: absolute;
-    left: 50px;
-  }
- 
-  #home-sec .btn.btn-primary {
-    width: 100px;
-    /* height: 94px; */
-    margin: 0 auto;
-    /* background: radial-gradient(#009961 50%, rgba(0, 153, 97, 0.4) 52%); */
-    /* border-radius: 50%; */
-    /* display: block; */
-    overflow: hidden;
-    position: relative;
-    left: 100px;
-  /* bottom: 10px; */
+position: absolute;
+left: 30%;
 }
-/* ....................... sections....................... */
-/* ...............ABOUT........... */
-section {
+  /* ............................SECTIONS........................ */
+  #home-sec{
+    padding: 0px 0;
+
+  }
+  section {
     padding: 60px 0;
   }
   
@@ -104,6 +61,7 @@ section {
     bottom: 0;
     left: calc(50% - 25px);
   }
+  /* ............................ABOUT........................ */
 
   #persona {
     font-family: 'Quicksand', sans-serif;
@@ -111,15 +69,19 @@ section {
     border: #29658A 5px solid;
     box-sizing: border-box;
     flex-wrap: wrap;
+    overflow: scroll;
     /* border-color: #29658A; */
     
     position: relative;
+  }
+  #persona::-webkit-scrollbar {
+    display: none;
   }
   #persona p{
     position: absolute;
     top: 120px;
   }
-  
+
   /* ................SKILLS............... */
   .section-supTitle{
 
@@ -141,7 +103,8 @@ section {
     bottom: 0;
     /* left: calc(20% - 25px); */
   }
-   /* ................TIMELINE............... */
+
+    /* ................TIMELINE............... */
 
    /* The actual timeline (the vertical ruler) */
 .main-timeline {
@@ -258,29 +221,35 @@ section {
     .right {
     left: 0%;
     }
-}
+    }
+
 
 /* ............................. PROJECTS................... */
-.proj-container{
+.proj-container
+{
     position: relative;
     row-gap: 20px;
 }
 
-.project{
+.project
+{
 position: absolute;
 
 }
-div.one {
+div.one 
+{
     position: relative;
     display: inline-block;
 }
-div.one #project-preview{
+div.one #project-preview
+{
     position: relative;
     left: 10px;
     display: inline-block;
 }
 
-div.one .project{
+div.one .project
+{
     position: relative;
 
     border:2px #29658A groove;
@@ -291,17 +260,20 @@ div.one .project{
     display: inline-block;
 
 }
-div.two {
+div.two
+ {
     position: relative;
     display: inline-block;
 }
-div.two #project-preview{
+div.two #project-preview
+{
     position: relative;
     right: 10px;
     display: inline-block;
 }
 
-div.two .project{
+div.two .project
+{
     position: relative;
     border:2px #29658A groove;
     top: 40px;
@@ -312,17 +284,20 @@ div.two .project{
     display: inline-block;
 
 }
-div.three {
+div.three
+ {
     position: relative;
     display: inline-block;
 }
-div.three #project-preview{
+div.three #project-preview
+{
     position: relative;
     left: 10px;
     display: inline-block;
 }
 
-div.three .project{
+div.three .project
+{
     position: relative;
     border:2px #51778f groove;
     top: 40px;
@@ -334,50 +309,14 @@ div.three .project{
 
 } 
 
-/* ...............................CONTACT................... */
-.contact-inner-sec{
-    flex: auto;
-justify-items: center;
-position: relative;
-left: 70px;
-}
-.contact-icon {
-    display: inline-block;
-margin-top: 50px;
-}
-.email{
-    position: relative;
-    /* margin-top: 50px; */
-}
-.email a{
-    position: absolute;
-    
 
-}
-.contact-details1{
-    position: absolute;
-    left: 80px;
-    /* padding: 20px 50px; */
-}
-.phone{
-    position: relative;
-    display: inline-block;
 
-}
-.phone a{
-    position: absolute;
-    left: 530px;
-
-}
-.contact-details2{
-    position: absolute;
-    left: 580px;
-}
-
+/* .........................FOOTER.................... */
 footer{
-    background: #e9e8e6;
+    
     padding: 30px 0;
-    color: #222222;
+    color: white;
     font-size: 14px;
     text-align: center;
 }
+  
