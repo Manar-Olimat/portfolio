@@ -1,3 +1,6 @@
+body{
+  background-color: #d7e8ef;
+}
 .nav-pills{
     position: relative;
     left: 400px;
@@ -19,11 +22,11 @@ li a.nav-link {
     padding-top: 150px;
     font-family: 'Ibarra Real Nova', serif;
   }
-.hero-myName{
+/* .hero-myName{
 
 position: absolute;
-left: 30%;
-}
+left: 50%;
+} */
   /* ............................SECTIONS........................ */
   #home-sec{
     padding: 0px 0;
@@ -61,21 +64,29 @@ left: 30%;
     bottom: 0;
     left: calc(50% - 25px);
   }
+  /* ............................BANNER........................ */
+  .banner-quote:hover{
+    animation: slidein 3s linear 1s;
+
+  }
   /* ............................ABOUT........................ */
 
   #persona {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 28px;
-    border: #29658A 5px solid;
+    font-family: 'Ibarra Real Nova', serif;    font-size: 28px;
+    border: #29658A 3px inset;
     box-sizing: border-box;
     flex-wrap: wrap;
     overflow: scroll;
     /* border-color: #29658A; */
-    
+    background-color: rgb(232, 242, 241);
     position: relative;
   }
   #persona::-webkit-scrollbar {
     display: none;
+  }
+  #persona h2{
+    font-family: 'Kalam', cursive;
+    font-weight: bold;
   }
   #persona p{
     position: absolute;
